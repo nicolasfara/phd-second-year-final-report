@@ -15,5 +15,8 @@ _minted*/
 *.nav
 *.snm
 *.vrb
+*.fdb_latexmk
+*.fls
 build/
 out/
+phd-second-year-final-report.pdf
