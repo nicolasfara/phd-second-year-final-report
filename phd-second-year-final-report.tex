@@ -84,14 +84,43 @@ enabling more expressive and safer distributed system programming.
 This work addresses fundamental challenges in developing large-scale distributed systems by providing formal guarantees about system behavior while maintaining the flexibility needed for modern edge-cloud deployments.
 
 \subsection{Scientific Contributions and Publications}
-
-Building upon the foundations established in my first year, the second year has seen significant theoretical and practical advances in my research domain.
+Building upon the foundations established in my first year,
+the second year has seen significant theoretical and practical advances in my research domain,
+but also undertaken new directions inspired by the research visit and the new trends in the LLMs field applied to collective systems.
 
 \subsubsection{Journal Publications}
+The major milestone of this year was the acceptance of our journal paper in ACM Transactions on Internet of Things (ACM TIOT)~\cite{10.1145/3758326}.
+%
+This work employs the use of Large Language Models (LLMs) to support the developers in the design and implementation of collective adaptive systems.
+%
+In the paper,
+we present how starting even with a basic base of knowledge (BoK) describing the collective abstractions and the aggregate operators,
+and providing a high-level description of the desired system behavior,
+it is possible to exploit LLMs to automatically generate valid code for the target system.
 
-The major milestone of this year was the acceptance of our journal paper in ACM Transactions on Internet of Things (ACM TIOT). This publication represents the culmination of the theoretical work developed during my visit to St. Gallen and provides a comprehensive framework for integrating effect systems with distributed computing paradigms. The paper demonstrates how the proposed approach can enhance the safety, expressiveness, and maintainability of collective adaptive systems deployed across edge-cloud infrastructures.
+Additional knowledge can be provided to improve the overall reliability of the generated code,
+on average improving the correctness of the generated code,
+even with small LLMs.
+%
+The approach has been validated through a comprehensive empirical evaluation,
+showing its ability to generate a full-fledged collective application in the domain of smart cities and crowd detection.
 
-Additionally, two significant journal submissions have been made to Future Generation Computer Systems (FGCS) and IoT Journal, both extending the theoretical and practical contributions of my research in complementary directions.
+Two additional journal papers are currently under review,
+one in the \emph{Future Generation Computer Systems} journal,
+focusing on how to exploit \emph{Graph Neural Networks} (GNNs) to optimize the deployment of heterogeneous collective systems in edge-cloud environments,
+trading-off between infrastructure costs and energy efficiency.
+%
+The second paper is under review in the \emph{Elsevier Internet of Things} journal,
+and it focuses on a decentralized approach for federated learning in IoT.
+%
+Unlike centralized FL,
+which suffers from bottlenecks and poor performance on non-IID data,
+our approach lets devices self-organize into federations based on spatial proximity and model similarity.
+%
+Each federation trains a specialized model,
+with leaders elected in a decentralized way for aggregation.
+%
+This design improves scalability, resilience, and adaptability while preserving privacy.
 
 \subsubsection{Conference Publications}
 
@@ -158,28 +187,7 @@ The foundation established in the first two years provides a strong platform for
 % BibTeX users should specify bibliography style 'splncs04'.
 % References will then be sorted and formatted in the correct style.
 %
-% \bibliographystyle{splncs04}
-% \bibliography{mybibliography}
-%
-\begin{thebibliography}{8}
-\bibitem{ref_article1}
-Author, F.: Article title. Journal \textbf{2}(5), 99--110 (2016)
+\bibliographystyle{splncs04}
+\bibliography{bibliography}
 
-\bibitem{ref_lncs1}
-Author, F., Author, S.: Title of a proceedings paper. In: Editor,
-F., Editor, S. (eds.) CONFERENCE 2016, LNCS, vol. 9999, pp. 1--13.
-Springer, Heidelberg (2016). \doi{10.10007/1234567890}
-
-\bibitem{ref_book1}
-Author, F., Author, S., Author, T.: Book title. 2nd edn. Publisher,
-Location (1999)
-
-\bibitem{ref_proc1}
-Author, A.-B.: Contribution title. In: 9th International Proceedings
-on Proceedings, pp. 1--2. Publisher, Location (2010)
-
-\bibitem{ref_url1}
-LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
-Oct 2017
-\end{thebibliography}
 \end{document}
